@@ -26,7 +26,8 @@ export default function (options = {}) {
           inline: false,
           annotation: false
         },
-        parser: options.parser
+        parser: options.parser,
+        syntax: options.syntax
       };
       return postcss(options.plugins || [])
           .process(code, opts)
